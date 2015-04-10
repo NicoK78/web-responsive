@@ -12,6 +12,19 @@ a {
 	height: 10vh;
 }
 
+ul {
+	padding-top: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+li {
+	width:100vw;
+	background-color: maroon;
+	list-style: none;
+	padding: 0px;
+}
+
 /* MOBILE */
 @media (max-width: 650px) {
 	.header {
@@ -36,16 +49,16 @@ a {
 	}
 
 	.orangeRectBanniere {
-		width: 100%;
-		height: 10vh;
+		width: 100vw;
+		height: 16vh;
+		padding-top: 5vh;
 		background-color: orange;
 	}
 
 	.greyRectBanniere {
-		width: 50%;
-		height: 60%;
-		padding-top: 20%;
+		width: 50vw;
+		height: 10vh;
 		margin: 0 auto;
-		background-color: white;
+		background-color: grey;
 	}
 }

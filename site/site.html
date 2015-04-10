@@ -2,12 +2,21 @@
 <html>
 
 	<head>
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello-codes.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello-ie7-codes.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello-ie7.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello-embedded.css">
+		
+
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="site.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
+<!-- 		<p class="icon-mail">aze</p> -->
 		<div class="header">
 			<div class="orangeRect"></div>
 			<img class="picto" src="picto1.png"/>
@@ -24,11 +33,34 @@
 		</div>
 
 		<div class="banniere">
-			<img class="banniere" src="http://img.21food.com/20110609/product/1211769431093.jpg"/>
+			<picture>
+				<source media="(min-width: 650px)" srcset="http://www.guide-australie.fr/wp-content/uploads/2013/10/pavlova-dessert-australie.jpg"/>
+				<source media="(min-width: 450px)" srcset="http://chefelise.com/wp-content/uploads/2013/07/cake-chocolate-cream-dessert-food-Favim.com-170665.jpg"/>
+				<source media="(min-width: 1px)" srcset="http://img.21food.com/20110609/product/1211769431093.jpg"/>
+				<img class="banniere" src"images.jpg" alt="myImage"/>
+			</picture>
 			<div class="orangeRectBanniere">
 				<div class="greyRectBanniere"></div>
 			</div>
 		</div>
+
+		<ul>
+			<li><a href="#"><h2>Selon vos envies</h2></a></li>
+			<li><a href="#">HUMEURS</a></li>
+			<li><a href="#">A TOUTE HEURE</a></li>
+			<li><a href="#">ENFANTS</a></li>
+			<li><a href="#">TRES RAPIDE</a></li>
+			<li><a href="#">CALENDRIER</a></li>
+			<li><a href="#">TENDANCE</a></li>
+			<li><a href="#">INDEX ALPHABETIQUE</a></li>
+			<li><a href="#"><h2>Selon vos besoins</h2></a></li>
+			<li><a href="#">PAR INGREDIENTS</a></li>
+			<li><a href="#">PAR DIFFICULTE</a></li>
+			<li><a href="#">PAR BUDGET</a></li>
+			<li><a href="#">PAR NOMBRE DE PERSONNE</a></li>
+			<li><a href="#">PAR TEMPS DE PREPARATION</a></li>
+			<li><a href="#">PAR TEMPS DE CUISSON</a></li>
+		</ul>
 
 		<div class="corps-top">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -52,6 +84,9 @@
 		<div class="footer">
 
 		</div>
+
+
+		<img src="data:image/jpeg;base64,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"></img>
 		<script type="text/javascript" src="site.js"></script>
 	</body>
 
